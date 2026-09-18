@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>King of Crypto Earn</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="logo">👑 King of Crypto</div>
+  <button class="login">Login</button>
+</header>
+
+<main>
+  <section class="hero">
+    <span class="badge">SELL • REFER • EARN</span>
+    <h1>Turn your products and referrals into income.</h1>
+    <p>Create an account, promote products with your referral link, and earn commission when eligible sales are completed.</p>
+    <button class="primary" onclick="showSignup()">Create Free Account</button>
+  </section>
+
+  <section class="stats">
+    <div><b>₦0</b><span>Your Balance</span></div>
+    <div><b>0</b><span>Referrals</span></div>
+    <div><b>0</b><span>Sales</span></div>
+  </section>
+
+  <section class="cards">
+    <article><div>🛍️</div><h2>Marketplace</h2><p>List physical or digital products for customers to discover.</p></article>
+    <article><div>🔗</div><h2>Affiliate Links</h2><p>Give users unique links and track eligible sales.</p></article>
+    <article><div>💰</div><h2>Commission Wallet</h2><p>Show confirmed commissions and withdrawal history.</p></article>
+  </section>
+
+  <section class="how">
+    <h2>How it works</h2>
+    <ol>
+      <li>Create an account</li>
+      <li>Choose or add a product</li>
+      <li>Share your referral link</li>
+      <li>Earn commission from completed eligible sales</li>
+      <li>Request withdrawal after reaching the minimum payout</li>
+    </ol>
+  </section>
+
+  <section id="signup" class="signup hidden">
+    <h2>Create your account</h2>
+    <input placeholder="Full name">
+    <input placeholder="Phone number">
+    <input type="email" placeholder="Email">
+    <input type="password" placeholder="Password">
+    <button class="primary">Register</button>
+  </section>
+</main>
+
+<footer>© 2026 King of Crypto Earn • Built for legitimate marketplace and affiliate sales</footer>
+<script>
+function showSignup(){
+  document.getElementById('signup').classList.remove('hidden');
+  document.getElementById('signup').scrollIntoView({behavior:'smooth'});
+}
+</script>
+</body>
+</html>
